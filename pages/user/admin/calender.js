@@ -1,5 +1,5 @@
 import Navbar from "../../../components/navbar";
-import Sidebar from "../../../components/counsellor/sidebar";
+import Sidebar from "../../../components/admin/sidebar";
 import { useState,useEffect} from "react";
 import useWindowDimensions from '../../../components/useWindowDimensions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

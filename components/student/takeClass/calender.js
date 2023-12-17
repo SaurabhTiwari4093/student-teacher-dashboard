@@ -1,6 +1,6 @@
 import FullCalendar from "@fullcalendar/react";
 import interactionPlugin from "@fullcalendar/interaction";
-import dayGridPlugin from '@fullcalendar/daygrid'
+import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import { useRef } from "react";
 
@@ -27,7 +27,7 @@ const events = [
     id: 2,
     title: "DTS STARTS",
     start: new Date(2022, 6, 13, 0, 0, 0),
-    end: new Date(2022,6, 20, 0, 0, 0),
+    end: new Date(2022, 6, 20, 0, 0, 0),
     url: "http:demourl.com",
     allocatedBy: "mr.Rayn Ronalds",
   },
@@ -140,19 +140,19 @@ const Calendar = () => {
 
   return (
     <div className="border border-slate-200 bg-white p-4 md:p-6 rounded-b-lg">
-        <FullCalendar
-          innerRef={calendarRef}
-          plugins={[timeGridPlugin,dayGridPlugin, interactionPlugin]}
-          headerToolbar={{
-            left: 'prev,next today',
-            center: 'title',
-            right: 'dayGridMonth,timeGridWeek,timeGridDay'
-          }}
-          editable
-          selectable
-          height={550}
-          events={events}
-        />
+      <FullCalendar
+        innerRef={calendarRef}
+        plugins={[timeGridPlugin, dayGridPlugin, interactionPlugin]}
+        headerToolbar={{
+          left: "prev,next today",
+          center: "title",
+          right: "dayGridMonth,timeGridWeek,timeGridDay",
+        }}
+        editable
+        selectable
+        height={550}
+        events={events}
+      />
     </div>
   );
 };

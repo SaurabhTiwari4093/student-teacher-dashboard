@@ -1,11 +1,11 @@
 import Navbar from "../../../../components/navbar";
-import Sidebar from "../../../../components/counsellor/sidebar";
+import Sidebar from "../../../../components/admin/sidebar";
 import { useState,useEffect} from "react";
 import useWindowDimensions from '../../../../components/useWindowDimensions';
 import styles from "../../../../styles/Home.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faListCheck,faPen,faTrash} from '@fortawesome/free-solid-svg-icons';
-import UpdateActivity from "../../../../components/counsellor/activity/updateActivity";
+import UpdateActivity from "../../../../components/admin/activity/updateActivity";
 
 const arr=["Activity 1","Activity 2","Activity 3","Activity 4","Activity 5"]
 

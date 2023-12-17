@@ -1,5 +1,5 @@
 import Navbar from "../../../../components/navbar";
-import Sidebar from "../../../../components/counsellor/sidebar";
+import Sidebar from "../../../../components/admin/sidebar";
 import { useState} from "react";
 import useWindowDimensions from '../../../../components/useWindowDimensions';
 import styles from "../../../../styles/Home.module.css";
@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import Image from "next/image";
 import Activity from "../../../../assets/activity.png"
-import AddActivity from "../../../../components/counsellor/curriculum/addActivity";
+import AddActivity from "../../../../components/admin/curriculum/addActivity";
 
 export default function Activities() {
   const [sidebarOpen, setSidebarOpen] = useState(true);

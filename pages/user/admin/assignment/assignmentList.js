@@ -1,11 +1,11 @@
 import Navbar from "../../../../components/navbar";
-import Sidebar from "../../../../components/counsellor/sidebar";
+import Sidebar from "../../../../components/admin/sidebar";
 import { useState,useEffect} from "react";
 import useWindowDimensions from '../../../../components/useWindowDimensions';
 import styles from "../../../../styles/Home.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBook,faPen,faTrash} from '@fortawesome/free-solid-svg-icons';
-import UpdateAssignment from "../../../../components/counsellor/assignment/updateAssignment";
+import UpdateAssignment from "../../../../components/admin/assignment/updateAssignment";
 
 const arr=["Assignment 1","Assignment 2","Assignment 3","Assignment 4","Assignment 5"]
 

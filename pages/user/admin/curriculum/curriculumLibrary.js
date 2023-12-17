@@ -1,5 +1,5 @@
 import Navbar from "../../../../components/navbar";
-import Sidebar from "../../../../components/counsellor/sidebar";
+import Sidebar from "../../../../components/admin/sidebar";
 import { useState,useEffect} from "react";
 import useWindowDimensions from '../../../../components/useWindowDimensions';
 import styles from "../../../../styles/Home.module.css";
@@ -103,7 +103,7 @@ export default function CurriculumLibrary() {
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mt-4 md:mt-6">
                 {num.map((value,index)=>(
                   <div key={index} className="border rounded-lg pb-3 text-center font-bold text-sm md:text-base">
-                    <Link href="/user/counsellor/curriculum/curriculumActivity">
+                    <Link href="/user/admin/curriculum/curriculumActivity">
                       <div className="cursor-pointer">
                         <Image src={Card} alt=""/>
                         <div>Deep Space</div>
