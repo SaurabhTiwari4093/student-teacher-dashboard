@@ -1,4 +1,4 @@
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo.svg";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
@@ -16,7 +16,7 @@ export default function Login() {
             <div className="w-4/5 md:w-2/5">
                 <div className="font-bold text-lg my-4 flex justify-center items-center gap-1">
                   <div className="flex justify-center"><Image src={Logo} alt="logo" width="25" height="25"/></div>
-                  <div className="flex justify-center">KAPABLE</div>
+                  <div className="flex justify-center">DEMO</div>
                 </div>
                 <div className="text-[#673ab7] font-bold text-2xl my-4">{user==="Counsellor"?"Operation Team":user} Login</div>
                 <div className="text-slate-400 text-lg my-4">Enter your credentials to continue</div>

@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <div style={{fontFamily:"'Poppins', sans-serif"}}>
         <Head>
-          <title>Kapable</title>
+          <title>DEMO</title>
         </Head>
         <Component {...pageProps}/>
       </div>

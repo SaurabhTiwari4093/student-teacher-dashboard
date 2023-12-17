@@ -1,4 +1,4 @@
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo.svg";
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars, faCircleUser,faGear,faBell,faSearch} from '@fortawesome/free-solid-svg-icons';
@@ -34,7 +34,7 @@ export default function Navbar(props) {
         <div className="flex md:justify-between items-center md:w-64">
           <div className="gap-2 items-center font-bold text-lg hidden md:flex">
             <div className="flex justify-center items-center"><Image src={Logo} alt="logo" width="25" height="25"/></div>
-            <div className="flex justify-center items-center">KAPABLE</div>
+            <div className="flex justify-center items-center">DEMO</div>
           </div>
           <div className="flex items-center">
             <button className="py-1 px-2 text-xl rounded-lg bg-[#ede7f6] text-[#673ab7] hover:bg-[#673ab7] hover:text-white" onClick={sidebar}>
