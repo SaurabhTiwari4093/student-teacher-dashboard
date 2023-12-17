@@ -2,10 +2,9 @@ import Navbar from "../../../../components/navbar";
 import Sidebar from "../../../../components/admin/sidebar";
 import { useState,useEffect} from "react";
 import useWindowDimensions from '../../../../components/useWindowDimensions';
-import styles from "../../../../styles/Home.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPersonChalkboard,faPen,faTrash} from '@fortawesome/free-solid-svg-icons';
-import UpdateTeacher from "../../../../components/admin/Teacher/updateTeacher";
+import UpdateTeacher from "../../../../components/admin/teacher/updateTeacher";
 
 const arr=["Teacher 1","Teacher 2","Teacher 3","Teacher 4","Teacher 5"]
 
@@ -32,7 +31,7 @@ export default function TeacherList() {
       <Navbar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
       {sidebarOpen?<Sidebar/>:""}
       <div className="px-4 pt-20 h-screen text-slate-800" style={width>="768"&&sidebarOpen?{paddingLeft:"18rem"}:{paddingLeft:"1rem"}}>
-        <div className="bg-[#e3f2fd] h-full rounded-t-lg p-4 md:p-6 overflow-y-auto" id={styles.noScrollBar}>
+        <div className="bg-[#e3f2fd] h-full rounded-t-lg p-4 md:p-6 overflow-y-auto no-scroll-bar">
           <div className="bg-white rounded-lg border border-[#bee1fa] h-full w-[50rem] overflow-x-auto md:w-full">
             <div className="p-4 md:p-6 font-semibold text-lg border-b flex items-center gap-3">
               <div className="flex items-center"><FontAwesomeIcon icon={faPersonChalkboard}/></div>

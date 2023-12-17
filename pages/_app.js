@@ -1,18 +1,8 @@
-import "../styles/globals.css";
-import Head from "next/head";
+import '@/styles/globals.css';
+import "@fontsource/poppins";
 import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/400-italic.css";
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <div style={{fontFamily:"'Poppins', sans-serif"}}>
-        <Head>
-          <title>DEMO</title>
-        </Head>
-        <Component {...pageProps}/>
-      </div>
-    </>
-  );
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />
 }
-
-export default MyApp;
