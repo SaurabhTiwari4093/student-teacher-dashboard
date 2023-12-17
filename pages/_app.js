@@ -1,7 +1,4 @@
 import "../styles/globals.css";
-import "@fullcalendar/common/main.css";
-import "@fullcalendar/daygrid/main.css";
-import "@fullcalendar/timegrid/main.css";
 import Head from "next/head";
 import "@fontsource/poppins/400.css";
 
