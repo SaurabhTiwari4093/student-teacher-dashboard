@@ -86,12 +86,10 @@ export default function Dashboard() {
                       <div className="font-medium text-sm md:text-base">Activities</div>
                     </div>
                     </Link>
-                    <Link href="/user/admin/calender">
                     <div className="flex flex-col items-center p-3 gap-3 mt-3 cursor-pointer">
                       <div className="text-3xl text-yellow-500"><FontAwesomeIcon icon={faCalendar}/></div>
                       <div className="font-medium text-sm md:text-base">Calender</div>
                     </div>
-                    </Link>
                   </div>
                 </div>
                 <div className="col-span-4 md:col-span-2 flex flex-col gap-4 md:gap-6">

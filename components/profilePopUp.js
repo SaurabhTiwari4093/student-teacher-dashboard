@@ -16,12 +16,10 @@ export default function ProfilePopUp() {
     var mySubString = str.substring(0, 7);
     if (mySubString === "/user/a") {
       setUserType("Admin");
-    } else if (mySubString === "/user/b") {
-      setUserType("B2B");
-    } else if (mySubString === "/user/t") {
+    }  else if (mySubString === "/user/t") {
       setUserType("Teacher");
-    } else if (mySubString === "/user/c") {
-      setUserType("Operation Team");
+    } else if (mySubString === "/user/s") {
+      setUserType("Student");
     } else {
       setUserType("");
     }
