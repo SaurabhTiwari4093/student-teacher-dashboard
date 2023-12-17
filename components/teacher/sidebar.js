@@ -12,7 +12,7 @@ export default function Sidebar() {
         className="flex flex-col gap-4 p-4 font-medium text-sm text-slate-600 h-full overflow-y-auto"
         id={styles.noScrollBar}
       >
-        <Link href="/user/admin/dashboard">
+        <Link href="/user/teacher/dashboard">
           <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
             <div className="flex items-center">
               <FontAwesomeIcon icon={faGauge} />
