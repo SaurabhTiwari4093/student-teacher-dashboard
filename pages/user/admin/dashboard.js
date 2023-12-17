@@ -109,9 +109,9 @@ export default function Dashboard() {
                   <div className="text-2xl md:text-3xl p-1 text-orange-600"><FontAwesomeIcon icon={faPersonChalkboard}/></div>
                   <div className="flex flex-col gap-2">
                     <div className="text-3xl md:text-4xl font-bold">120</div>
-                    <div className="text-slate-400 text-base md:text-lg pb-4">Trainers</div>
+                    <div className="text-slate-400 text-base md:text-lg pb-4">Teachers</div>
                   </div>
-                  <Link href="/user/admin/trainer/trainerList">
+                  <Link href="/user/admin/teacher/teacherList">
                     <div className="absolute bottom-3 right-3 text-xs md:text-sm text-[#673ab7] font-medium cursor-pointer">See More {">"}</div>
                   </Link>
                 </div> 

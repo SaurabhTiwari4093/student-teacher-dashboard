@@ -5,19 +5,19 @@ import useWindowDimensions from '../../../../components/useWindowDimensions';
 import styles from "../../../../styles/Home.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPersonChalkboard,faPen,faTrash} from '@fortawesome/free-solid-svg-icons';
-import UpdateTrainer from "../../../../components/admin/trainer/updateTrainer";
+import UpdateTeacher from "../../../../components/admin/Teacher/updateTeacher";
 
-const arr=["Trainer 1","Trainer 2","Trainer 3","Trainer 4","Trainer 5"]
+const arr=["Teacher 1","Teacher 2","Teacher 3","Teacher 4","Teacher 5"]
 
 
-export default function TrainerList() {
+export default function TeacherList() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const { width } = useWindowDimensions();
-  const [updateTrainerSidebarOpen,setUpdateTrainerSidebarOpen]=useState(false);
+  const [updateTeacherSidebarOpen,setUpdateTeacherSidebarOpen]=useState(false);
 
-  const openUpdateTrainerSidebar=()=>{
-    if(updateTrainerSidebarOpen==false){
-      setUpdateTrainerSidebarOpen(true);
+  const openUpdateTeacherSidebar=()=>{
+    if(updateTeacherSidebarOpen==false){
+      setUpdateTeacherSidebarOpen(true);
     }
   }
 
@@ -36,11 +36,11 @@ export default function TrainerList() {
           <div className="bg-white rounded-lg border border-[#bee1fa] h-full w-[50rem] overflow-x-auto md:w-full">
             <div className="p-4 md:p-6 font-semibold text-lg border-b flex items-center gap-3">
               <div className="flex items-center"><FontAwesomeIcon icon={faPersonChalkboard}/></div>
-              <div>Trainer List</div>
+              <div>Teacher List</div>
             </div>
             <div className="p-4 md:p-6">
               <div className="grid grid-cols-12 font-semibold pb-3 border-b-2 gap-2 px-2">
-                <div className="col-span-2">Trainer Name</div>
+                <div className="col-span-2">Teacher Name</div>
                 <div className="col-span-2">DOB</div>
                 <div className="col-span-2">Experience</div>
                 <div className="col-span-2">Joining Date</div>
@@ -63,7 +63,7 @@ export default function TrainerList() {
                           <option>Class 2</option>
                         </select>
                     </div>
-                    <div className="col-span-1 bg-[#ede7f6] text-[#673ab7] hover:bg-[#673ab7] hover:text-white p-2 px-3 rounded-full w-fit cursor-pointer" onClick={openUpdateTrainerSidebar}><FontAwesomeIcon icon={faPen}/></div>
+                    <div className="col-span-1 bg-[#ede7f6] text-[#673ab7] hover:bg-[#673ab7] hover:text-white p-2 px-3 rounded-full w-fit cursor-pointer" onClick={openUpdateTeacherSidebar}><FontAwesomeIcon icon={faPen}/></div>
                     <div className="col-span-1 bg-[#ede7f6] text-[#673ab7] hover:bg-[#673ab7] hover:text-white p-2 px-3 rounded-full w-fit cursor-pointer"><FontAwesomeIcon icon={faTrash}/></div> 
                   </div>
                 ))
@@ -73,7 +73,7 @@ export default function TrainerList() {
           </div>
         </div>
       </div>
-      {updateTrainerSidebarOpen?<UpdateTrainer updateTrainerSidebarOpen={updateTrainerSidebarOpen} setUpdateTrainerSidebarOpen={setUpdateTrainerSidebarOpen}/>:""}
+      {updateTeacherSidebarOpen?<UpdateTeacher updateTeacherSidebarOpen={updateTeacherSidebarOpen} setUpdateTeacherSidebarOpen={setUpdateTeacherSidebarOpen}/>:""}
     </>
   )
 }

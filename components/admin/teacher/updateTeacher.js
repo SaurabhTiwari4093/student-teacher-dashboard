@@ -1,9 +1,9 @@
-export default function UpdateTrainer(props) {
-    const { updateTrainerSidebarOpen, setUpdateTrainerSidebarOpen } = props;
+export default function UpdateTeacher(props) {
+    const { updateTeacherSidebarOpen, setUpdateTeacherSidebarOpen } = props;
   
-    const closeUpdateTrainer = () => {
-      if (updateTrainerSidebarOpen == true) {
-        setUpdateTrainerSidebarOpen(false);
+    const closeUpdateTeacher = () => {
+      if (updateTeacherSidebarOpen == true) {
+        setUpdateTeacherSidebarOpen(false);
       }
     };
   
@@ -13,13 +13,13 @@ export default function UpdateTrainer(props) {
           </div>
           <div className="col-span-4 md:col-span-3 bg-white">
               <div className="bg-[#e3f2fd] fixed top-0 w-full p-4 md:p-6 flex items-center justify-start gap-4 md:gap-6">
-                  <div><button className="py-1 px-3 text-xl rounded-lg bg-[#673ab7] hover:bg-[#563199] text-white" onClick={closeUpdateTrainer}>X</button></div>
-                  <div className="text-center font-bold text-base md:text-xl">Edit Trainer</div>
+                  <div><button className="py-1 px-3 text-xl rounded-lg bg-[#673ab7] hover:bg-[#563199] text-white" onClick={closeUpdateTeacher}>X</button></div>
+                  <div className="text-center font-bold text-base md:text-xl">Edit Teacher</div>
               </div>
               <div className="font-semibold p-4 pt-32 md:p-6 md:pt-32">
                 <div className="grid grid-cols-2 gap-4 md:gap-6">
                   <div className="col-span-2 md:col-span-1">
-                    <label>Trainer Name
+                    <label>Teacher Name
                       <input input="text" className="w-full p-2 border border-slate-200 rounded-lg outline-none text-slate-600"/>
                     </label>
                   </div>

@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPersonChalkboard} from '@fortawesome/free-solid-svg-icons';
 
 
-export default function CreateTrainer() {
+export default function CreateTeacher() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const { width } = useWindowDimensions();
 
@@ -26,11 +26,11 @@ export default function CreateTrainer() {
           <div className="bg-white rounded-lg border border-[#bee1fa] min-h-full">
             <div className="p-4 md:p-6 font-semibold text-lg border-b flex items-center gap-3">
               <div className="flex items-center"><FontAwesomeIcon icon={faPersonChalkboard}/></div>
-              <div>Create Trainer</div>
+              <div>Create Teacher</div>
             </div>
             <div className="p-4 md:p-6 flex justify-center w-full">
               <form className="w-full">
-                  <div className="text-lg mb-4 font-medium">Fill this form and click submit to create trainer</div>
+                  <div className="text-lg mb-4 font-medium">Fill this form and click submit to create teacher</div>
                   <div className="grid md:grid-cols-2 gap-4 md:gap-6 font-semibold">
                     <div className="col-span-2 md:col-span-1">
                       <label>Name
